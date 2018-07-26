@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2018_07_07_185856) do
   enable_extension "plpgsql"
 
   create_table "enemies", force: :cascade do |t|
-    t.string "type"
+    t.string "enemyType"
     t.integer "level_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
