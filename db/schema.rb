@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2018_07_07_185856) do
   enable_extension "plpgsql"
 
   create_table "enemies", force: :cascade do |t|
-    t.string "enemyType"
+    t.string "enemy_type"
     t.integer "level_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2018_07_07_185856) do
     t.integer "lives"
     t.integer "score"
     t.integer "kills"
+    t.string "passphrase"
+    t.string "difficulty"
     t.integer "level_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

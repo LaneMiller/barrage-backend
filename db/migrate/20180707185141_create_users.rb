@@ -5,6 +5,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.integer :lives
       t.integer :score
       t.integer :kills
+      t.string :passphrase
+      t.string :difficulty
       t.integer :level_id
 
       t.timestamps
