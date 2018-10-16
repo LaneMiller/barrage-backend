@@ -12,6 +12,7 @@ namespace :db do
   end
 
   desc 'Does it all'
-  task refresh: ['db:drop', 'db:create', 'db:migrate', 'db:z']
+  task refresh: ['db:drop', 'db:create', 'db:migrate', 'db:z'] do
     puts 'dropping, creating, migrating, and seeding.'
+  end
 end
