@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Level.create({top_bound: 25, bottom_bound: 192, left_bound: 758, right_bound: 1145, wave_size: 3}).enemies.create([{enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}])
+Level.create({level_id: 1, wave_size: 3}).enemies.create([{enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}])
 
-Level.create({top_bound: 25, bottom_bound: 192, left_bound: 758, right_bound: 1145, wave_size: 4}).enemies.create([{enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}])
+Level.create({level_id: 2, wave_size: 4}).enemies.create([{enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}])
 
-Level.create({top_bound: 25, bottom_bound: 192, left_bound: 758, right_bound: 1145, wave_size: 5}).enemies.create([{enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}])
+Level.create({level_id: 3, wave_size: 5}).enemies.create([{enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'green'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}, {enemy_type: 'purple'}])
 
 User.create(health: 100, lives: 2, score: 0, kills: 0, passphrase: 'player', difficulty: 'Medium', level_id: 1)

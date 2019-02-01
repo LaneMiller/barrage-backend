@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_07_185856) do
+ActiveRecord::Schema.define(version: 2019_02_01_170850) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,13 +23,10 @@ ActiveRecord::Schema.define(version: 2018_07_07_185856) do
   end
 
   create_table "levels", force: :cascade do |t|
-    t.integer "top_bound"
-    t.integer "bottom_bound"
-    t.integer "left_bound"
-    t.integer "right_bound"
     t.integer "wave_size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "level_id"
   end
 
   create_table "users", force: :cascade do |t|
