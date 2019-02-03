@@ -8,7 +8,4 @@ class Api::V1::LevelsController < ApplicationController
     @level = Level.find(params[:id])
     render json: @level
   end
-
-  def create
-  end
 end

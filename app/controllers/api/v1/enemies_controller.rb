@@ -8,7 +8,4 @@ class Api::V1::EnemiesController < ApplicationController
     @enemy = Enemy.find(params[:id])
     render json: @enemy
   end
-
-  def create
-  end
 end
