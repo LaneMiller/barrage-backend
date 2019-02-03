@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors, :debug => true do
   allow do
-    origins 'barrage-arcade.herokuapp.com/'
+    origins 'https://barrage-arcade.herokuapp.com'
 
     resource '*',
       headers: :any,
